@@ -19,12 +19,12 @@ function ProductList() {
 
   return (
     <>
-      <Box sx={{ width: "100%", margin: 5 }}>
-        <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Box sx={{ margin: 5 }}>
+        <Grid container spacing={1}>
           {" "}
           {state.products
             ? state.products.map((product, index) => (
-                <Grid xs={6}>
+                <Grid xs={3}>
                   <ProductListItem
                     key={index}
                     product={product}

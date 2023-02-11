@@ -135,7 +135,7 @@ const Topbar = () => {
                       className="cursor-pointer hover:opacity-75"
                       href="/products"
                     >
-                      Products
+                      Product List
                     </a>
                   </li>
                   <li className="text-white mr-3 hover:opacity-75">
@@ -143,7 +143,8 @@ const Topbar = () => {
                       className="cursor-pointer hover:opacity-75"
                       href="/productlist"
                     >
-                      Product List
+                      {" "}
+                      Product Table
                     </a>
                   </li>
                   <li className="text-white mr-3 hover:opacity-75">

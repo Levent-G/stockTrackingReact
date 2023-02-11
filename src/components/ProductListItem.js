@@ -21,8 +21,8 @@ function ProductListItem(props) {
       </CardContent>
       <CardActions>
         <Button size="small">Share</Button>
-        <Typography variant="body2" color="text.secondary">
-          {price}
+        <Typography variant="body2" className="font-black">
+          {price} $
         </Typography>
       </CardActions>
     </Card>

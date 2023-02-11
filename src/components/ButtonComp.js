@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "@mui/material/Button";
-function TextFieldComp(props) {
+function ButtonComp(props) {
   return (
     <div>
       <Button
@@ -17,4 +17,4 @@ function TextFieldComp(props) {
   );
 }
 
-export default TextFieldComp;
+export default ButtonComp;
