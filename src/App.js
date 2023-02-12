@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import Topbar from "./layouts/Topbar";
 import ProductPage from "./pages/ProductPage";
 import ProductTable from "./pages/ProductTable";
+import CategoryPage from "./pages/CategoryPage";
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
             <Route path="/homepage" element={<HomePage />}></Route>
             <Route path="/products" element={<ProductPage />}></Route>
             <Route path="/productlist" element={<ProductTable />}></Route>
+            <Route path="/categorylist" element={<CategoryPage />}></Route>
           </Routes>
         </BrowserRouter>
       </>

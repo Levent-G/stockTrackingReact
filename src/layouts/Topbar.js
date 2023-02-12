@@ -148,7 +148,13 @@ const Topbar = () => {
                     </a>
                   </li>
                   <li className="text-white mr-3 hover:opacity-75">
-                    <span className="cursor-pointer">MenuItem</span>
+                    <a
+                      className="cursor-pointer hover:opacity-75"
+                      href="/categorylist"
+                    >
+                      {" "}
+                      Category Table
+                    </a>
                   </li>
                   <li className="text-white mr-auto hover:opacity-75">
                     <span className="cursor-pointer">MenuItem</span>

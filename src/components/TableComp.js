@@ -19,11 +19,12 @@ const TableComp = (props) => {
               <>
                 <tr>
                   <td className="border-solid border-gray-500 p-8">{td?.id}</td>
-                  <td className="border-solid border-gray-500 p-8">
-                    <img src={td?.image} alt="sad" className="w-24 h-24" />
-                  </td>
+
                   <td className="border-solid border-gray-500 p-8">
                     {td?.title}
+                  </td>
+                  <td className="border-solid border-gray-500 p-8">
+                    <img src={td?.image} alt="sad" className="w-24 h-24" />
                   </td>
                   <td className="border-solid border-gray-500 p-8">
                     {td?.description}

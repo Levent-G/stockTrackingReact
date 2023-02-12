@@ -5,4 +5,5 @@ import LoginReducer from "../reducers/LoginReducer";
 export default combineReducers({
   products: ProductReducer,
   loginUser: LoginReducer,
+  category: ProductReducer,
 });

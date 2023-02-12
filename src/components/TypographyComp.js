@@ -4,13 +4,12 @@ const TypographyComp = (props) => {
   return (
     <div>
       <Typography
-        value={props.value}
-        variant={props.variant}
+        variant="h5"
         required
         autoFocus
         noWrap
         fullWidth
-        component={props.div}
+        component="div"
         sx={{
           display: {
             xs: "none",
