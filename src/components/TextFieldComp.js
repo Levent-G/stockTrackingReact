@@ -4,7 +4,7 @@ function TextFieldComp(props) {
   return (
     <div>
       <TextField
-        margin={props.margin}
+        margin="normal"
         required
         fullWidth
         id={props.id}

@@ -156,6 +156,15 @@ const Topbar = () => {
                       Category Table
                     </a>
                   </li>
+                  <li className="text-white mr-3 hover:opacity-75">
+                    <a
+                      className="cursor-pointer hover:opacity-75"
+                      href="/searchcat"
+                    >
+                      {" "}
+                      Search Category
+                    </a>
+                  </li>
                   <li className="text-white mr-auto hover:opacity-75">
                     <span className="cursor-pointer">MenuItem</span>
                   </li>

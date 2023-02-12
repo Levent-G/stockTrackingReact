@@ -21,3 +21,15 @@ export const getCategory = () => {
       .then((resp) => dispatch({ type: "GET_CATEGORY", payload: resp.data }));
   };
 };
+export const searchGetCat = (searchCat) => {
+  return (dispatch) => {
+    //api call
+    //dispatch({type:" GET USER", payload:resp.data})
+
+    axios
+      .get(`https://fakestoreapi.com/products/category/${searchCat}`)
+      .then((resp) =>
+        dispatch({ type: "GET_SEARCHCATEGORY", payload: resp.data })
+      );
+  };
+};
