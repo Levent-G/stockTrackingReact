@@ -7,4 +7,5 @@ export default combineReducers({
   loginUser: LoginReducer,
   category: ProductReducer,
   searchcategory: ProductReducer,
+  pastsales: ProductReducer,
 });

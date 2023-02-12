@@ -6,6 +6,8 @@ const ProductReducer = (state = [], action) => {
       return { ...state, category: action.payload };
     case "GET_SEARCHCATEGORY":
       return { ...state, searchcategory: action.payload };
+    case "GET_PASTSALES":
+      return { ...state, pastsales: action.payload };
     default:
       return state;
   }

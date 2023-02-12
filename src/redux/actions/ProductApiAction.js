@@ -33,3 +33,13 @@ export const searchGetCat = (searchCat) => {
       );
   };
 };
+export const getPastSales = (searchCat) => {
+  return (dispatch) => {
+    //api call
+    //dispatch({type:" GET USER", payload:resp.data})
+
+    axios
+      .get(`https://fakestoreapi.com/carts`)
+      .then((resp) => dispatch({ type: "GET_PASTSALES", payload: resp.data }));
+  };
+};

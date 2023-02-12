@@ -166,7 +166,13 @@ const Topbar = () => {
                     </a>
                   </li>
                   <li className="text-white mr-auto hover:opacity-75">
-                    <span className="cursor-pointer">MenuItem</span>
+                    <a
+                      className="cursor-pointer hover:opacity-75"
+                      href="/pastsaleschart"
+                    >
+                      {" "}
+                      Past Sales Chart
+                    </a>
                   </li>
                 </ul>
               </Box>
