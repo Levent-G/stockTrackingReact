@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import ProductListItem from "./ProductListItem";
 import { useSelector, useDispatch } from "react-redux";
 import { ProductApiAction } from "../redux/actions/ProductApiAction";
+import Pagination from "@mui/material/Pagination";
 
 import Grid from "@mui/material/Grid";
 
@@ -35,6 +36,15 @@ function ProductList() {
             : ""}
         </Grid>
       </Box>
+
+      <Pagination
+        count={10}
+        color="secondary"
+        size="large"
+        showFirstButton
+        showLastButton
+        className="w-screen h-full ml-96   "
+      />
     </>
   );
 }
