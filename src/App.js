@@ -7,6 +7,8 @@ import ProductTable from "./pages/ProductTable";
 import CategoryPage from "./pages/CategoryPage";
 import SearchCatPage from "./pages/SearchCatPage";
 import PastSalesChart from "./pages/PastSalesChart";
+import OneProductGetComp from "./components/OneProductGetComp";
+
 function App() {
   return (
     <div className="App">
@@ -21,6 +23,10 @@ function App() {
             <Route path="/categorylist" element={<CategoryPage />}></Route>
             <Route path="/searchcat" element={<SearchCatPage />}></Route>
             <Route path="/pastsaleschart" element={<PastSalesChart />}></Route>
+            <Route
+              path="/getoneproduct/:productId"
+              element={<OneProductGetComp />}
+            />
           </Routes>
         </BrowserRouter>
       </>

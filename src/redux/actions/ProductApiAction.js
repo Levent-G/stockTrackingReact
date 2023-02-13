@@ -43,3 +43,13 @@ export const getPastSales = (searchCat) => {
       .then((resp) => dispatch({ type: "GET_PASTSALES", payload: resp.data }));
   };
 };
+export const getOneProduct = (productId) => {
+  return (dispatch) => {
+    //api call
+    //dispatch({type:" GET USER", payload:resp.data})
+
+    axios
+      .get(`https://fakestoreapi.com/products/${productId}`)
+      .then((resp) => dispatch({ type: "GET_ONEPRODUCT", payload: resp.data }));
+  };
+};

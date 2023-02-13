@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getPastSales } from "../redux/actions/ProductApiAction";
-import { useEffect } from "react";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 const PastSalesChart = () => {
@@ -20,6 +19,7 @@ const PastSalesChart = () => {
           <th className="border-solid border-gray-500 p-8">Date</th>
           <th className="border-solid border-gray-500 p-8">productId</th>
           <th className="border-solid border-gray-500 p-8">quantity</th>
+          <th className="border-solid border-gray-500 p-8">Total quantity</th>
         </tr>
 
         {state.pastsales
@@ -37,7 +37,12 @@ const PastSalesChart = () => {
                   </td>
 
                   <td className="border-solid border-gray-500 p-8">
-                    {pastsales?.products[0].productId}
+                    <Button
+                      variant="contained"
+                      href={`/getoneproduct/${pastsales?.products[0].productId}`}
+                    >
+                      Get One Product
+                    </Button>
                   </td>
                   <td className="border-solid border-gray-500 p-8">
                     {pastsales?.products[0].quantity}

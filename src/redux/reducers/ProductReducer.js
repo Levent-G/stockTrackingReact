@@ -8,6 +8,8 @@ const ProductReducer = (state = [], action) => {
       return { ...state, searchcategory: action.payload };
     case "GET_PASTSALES":
       return { ...state, pastsales: action.payload };
+    case "GET_ONEPRODUCT":
+      return { ...state, getoneproduct: action.payload };
     default:
       return state;
   }

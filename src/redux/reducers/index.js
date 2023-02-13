@@ -8,4 +8,5 @@ export default combineReducers({
   category: ProductReducer,
   searchcategory: ProductReducer,
   pastsales: ProductReducer,
+  getoneproduct: ProductReducer,
 });
