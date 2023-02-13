@@ -13,13 +13,13 @@ const CategoryPage = () => {
   }, [dispatch]);
 
   return (
-    <div className="m-48">
+    <div>
       {state.category
         ? state.category.map((td) => (
-            <>
+            <div className="float-left m-5">
               <TypographyComp color="black" text={td + " "} />
               <Button variant="contained">Düzenle</Button>
-            </>
+            </div>
           ))
         : ""}
     </div>
