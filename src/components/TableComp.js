@@ -22,14 +22,14 @@ const TableComp = (props) => {
                   <td className="border-solid border-gray-500 p-8">
                     <img src={td?.image} alt="sad" className="w-32 h-16" />
                   </td>
-                  <td className="border-solid border-gray-500 p-8">
+                  <td className="border-solid border-gray-500 p-8 bg-blue-200 ">
                     {td?.title}
                   </td>
 
                   <td className="border-solid border-gray-500 p-8">
                     {td?.description}
                   </td>
-                  <td className="border-solid border-gray-500 p-8">
+                  <td className="border-solid border-gray-500 p-8 bg-green-200 ">
                     {td?.price}
                   </td>
 

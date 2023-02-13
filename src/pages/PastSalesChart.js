@@ -26,13 +26,13 @@ const PastSalesChart = () => {
           ? state.pastsales.map((pastsales) => (
               <>
                 <tr>
-                  <td className="border-solid border-gray-500 p-8">
+                  <td className="border-solid border-gray-500 p-8 bg-blue-200 ">
                     {pastsales?.id}
                   </td>
-                  <td className="border-solid border-gray-500 p-8">
+                  <td className="border-solid border-gray-500 p-8  ">
                     {pastsales?.userId}
                   </td>
-                  <td className="border-solid border-gray-500 p-8">
+                  <td className="border-solid border-gray-500 p-8 bg-green-200 ">
                     {pastsales?.date}
                   </td>
 
@@ -41,10 +41,10 @@ const PastSalesChart = () => {
                       variant="contained"
                       href={`/getoneproduct/${pastsales?.products[0].productId}`}
                     >
-                      Get One Product
+                      Show Sold Product
                     </Button>
                   </td>
-                  <td className="border-solid border-gray-500 p-8">
+                  <td className="border-solid border-gray-500 p-8 bg-red-200 ">
                     {pastsales?.products[0].quantity}
                   </td>
 
