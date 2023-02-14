@@ -9,4 +9,5 @@ export default combineReducers({
   searchcategory: ProductReducer,
   pastsales: ProductReducer,
   getoneproduct: ProductReducer,
+  addproduct: ProductReducer,
 });

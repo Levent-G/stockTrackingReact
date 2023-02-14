@@ -10,6 +10,8 @@ const ProductReducer = (state = [], action) => {
       return { ...state, pastsales: action.payload };
     case "GET_ONEPRODUCT":
       return { ...state, getoneproduct: action.payload };
+    case "POST_ADDPRODUCT":
+      return { ...state, addproduct: action.payload };
     default:
       return state;
   }

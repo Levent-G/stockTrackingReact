@@ -1,7 +1,6 @@
 import React from "react";
-import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
 
+import StackButtonComp from "../components/StackButtonComp";
 const TableComp = (props) => {
   return (
     <div className="m-5 bg-slate-100 ">
@@ -38,17 +37,7 @@ const TableComp = (props) => {
                   </td>
 
                   <td className="border-solid border-gray-500 p-8">
-                    <Stack spacing={2} direction="row">
-                      <Button size="small" variant="contained" color="success">
-                        Add
-                      </Button>
-                      <Button size="small" variant="contained">
-                        Edit
-                      </Button>
-                      <Button size="small" variant="contained" color="error">
-                        Delete
-                      </Button>
-                    </Stack>
+                    <StackButtonComp />
                   </td>
                 </tr>
               </>
